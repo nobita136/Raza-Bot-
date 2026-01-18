@@ -54,7 +54,8 @@ To enable advanced AI features in `goibot.js`, you need to set your API key:
 The bot is pre-configured with a `.github/workflows/main.yml` to ensure it stays active and tests properly on GitHub.
 Work Flow.
 ```bash
-# "name: Bot CI
+#
+name: Bot CI
 
 on:
   push:
@@ -73,7 +74,9 @@ jobs:
         node-js-version: '20'
     - run: npm install
     - name: Check Build
-      run: node -e "console.log('Build successful')" #
+      run: node -e "console.log('Build successful')
+
+,
 
 
 
